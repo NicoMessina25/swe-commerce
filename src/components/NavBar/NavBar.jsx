@@ -16,7 +16,7 @@ function NavBar(){
                 <li className='button--blue'><FontAwesomeIcon icon={faMugSaucer}/> Tazas</li>
                 <li className='button--blue'><FontAwesomeIcon icon={faCirclePlus}/> Otros</li>
             </ul>
-            <button className='button3--green cart'><FontAwesomeIcon icon={faCartShopping}/></button>
+            <button className='button3--purple cart'><FontAwesomeIcon icon={faCartShopping}/></button>
         </nav>
     );
 }

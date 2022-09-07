@@ -163,6 +163,15 @@ img{
     }
 }
 
+.button3--purple{
+    @extend.button3;
+    @include colAndBGCol(map-get($mainCol, primary), map-get($lightMainCol, lighterPurple));
+    &:hover{
+        //border: 3px solid map-get($darkMainCol, darkerGreen);
+        @include colAndBGCol(map-get($lightMainCol, lighterPurple), map-get($darkMainCol, darkerPrimary));
+    }
+}
+
 @media screen and (min-width: 768px) {
     
 }
