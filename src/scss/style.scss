@@ -1,0 +1,168 @@
+@import 'mixins', 'fontFamilies', 'colors';
+
+img{
+    transition: all .4s;
+    &:hover{
+        transform: scale(1.05,1.05);
+    }
+}
+
+.flexible--row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexible--rowWrap{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flexible--rowReverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flexible--column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexible--columnReverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flexible--columnWrap{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.button{
+    cursor: pointer;
+    @include fonts($primaryFont, 100%, 700);
+    border-radius: 5px 25px 5px 25px;
+    width: fit-content;
+    font-weight: bolder;
+    @include marPad(1%, 1%);
+    transition: all .1s;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        //box-shadow: 1px 1px 10px 5px map-get($darkMainCol, darkerPrimary);
+    }
+}
+
+.button--red{
+    @extend.button;
+    @include colAndBGCol(map-get($mainCol, mRed), map-get($darkMainCol, darkerPrimary));
+    &:hover{
+        @include colAndBGCol(map-get($mainCol, primary), map-get($darkMainCol, darkerRed));
+    }
+}
+
+.button--green{
+    @extend.button;
+    @include colAndBGCol(map-get($mainCol, mGreen), map-get($darkMainCol, darkerPrimary));
+    &:hover{
+        @include colAndBGCol(map-get($mainCol, primary), map-get($darkMainCol, darkerGreen));
+    }
+}
+
+.button--blue{
+    @extend.button;
+    @include colAndBGCol(map-get($mainCol, mBlue), map-get($darkMainCol, darkerPrimary));
+    &:hover{
+        @include colAndBGCol(map-get($mainCol, primary), map-get($darkMainCol, darkerBlue));
+        //box-shadow: 0px 0px 10px 5px map-get($mainCol, mBlue);
+    }
+}
+
+.button--purple{
+    @extend.button;
+    @include colAndBGCol(map-get($mainCol, mPurple), map-get($darkMainCol, darkerPrimary));
+    &:hover{
+        @include colAndBGCol(map-get($mainCol, primary), map-get($darkMainCol, darkerPurple));
+    }
+}
+
+.button2{
+    @extend.button;
+    //@include fonts($primaryFont, 100%, 700);
+    border-radius: 75px 75px 75px 75px;
+    border: 2px solid map-get($darkMainCol, darkerPrimary);
+    transition: all .2s;
+}
+
+.button2--red{
+    @extend.button2;
+    @include colAndBGCol(map-get($lightMainCol, lighterRed), map-get($darkMainCol, darkerRed));
+    &:hover{
+        @include colAndBGCol(map-get($darkMainCol, darkerRed), map-get($darkMainCol, darkerPrimary));
+    }
+}
+
+.button2--green{
+    @extend.button2;
+    @include colAndBGCol(map-get($lightMainCol, lighterGreen), map-get($darkMainCol, darkerGreen));
+    &:hover{
+        @include colAndBGCol(map-get($darkMainCol,darkerGreen), map-get($darkMainCol, darkerPrimary));
+    }
+}
+
+.button2--blue{
+    @extend.button2;
+    @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerBlue));
+    &:hover{
+        @include colAndBGCol(map-get($darkMainCol, darkerBlue), map-get($darkMainCol, darkerPrimary));
+    }
+}
+
+.button2--purple{
+    @extend.button2;
+    @include colAndBGCol(map-get($lightMainCol, lighterPurple), map-get($darkMainCol, darkerPurple));
+    &:hover{
+        @include colAndBGCol(map-get($darkMainCol, darkerPurple), map-get($darkMainCol, darkerPrimary));
+    }
+}
+
+.button3{
+    @extend.button;
+    //@include fonts($primaryFont, 100%, inherit);
+    @include marPad(1%, 1.5%);
+    border: 3px solid map-get($darkMainCol, darkerPrimary);
+    transition: all .2s;
+    border-radius: 25px 25px 25px 25px ;
+    &:hover{
+        transform: scale(1.0, 1.0)
+    }
+}
+
+.button3--blue{
+    @extend.button3;
+    @include colAndBGCol(map-get($mainCol, primary), map-get($lightMainCol, lighterBlue));
+    &:hover{
+        //border: 3px solid map-get($darkMainCol, darkerBlue);
+        @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerPrimary));
+    }
+}
+
+.button3--red{
+    @extend.button3;
+    @include colAndBGCol(map-get($mainCol, primary), map-get($lightMainCol, lighterRed));
+    &:hover{
+        //border: 3px solid map-get($darkMainCol, darkerRed);
+        @include colAndBGCol(map-get($lightMainCol, lighterRed), map-get($darkMainCol, darkerPrimary));
+    }
+}
+
+.button3--green{
+    @extend.button3;
+    @include colAndBGCol(map-get($mainCol, primary), map-get($lightMainCol, lighterGreen));
+    &:hover{
+        //border: 3px solid map-get($darkMainCol, darkerGreen);
+        @include colAndBGCol(map-get($lightMainCol, lighterGreen), map-get($darkMainCol, darkerPrimary));
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}

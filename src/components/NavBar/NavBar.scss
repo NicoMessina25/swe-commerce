@@ -1,0 +1,39 @@
+@import '../../scss/mixins', '../../scss/colors';
+
+nav{
+    @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($mainCol, primary));
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50%;
+
+    img{
+        @include sizes(30px, 30px);
+    }
+
+    .menu{
+        @include marPad(0,0);
+        width: 70%;
+        justify-content: space-evenly;
+        list-style: none;
+        
+    }
+
+    .cart{
+        font-size: 150%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    nav{
+        font-size: 100%;
+
+        img{
+            @include sizes(140px, 140px);
+        }
+
+        .menu{
+            width: 50%;
+        }
+    }
+}
