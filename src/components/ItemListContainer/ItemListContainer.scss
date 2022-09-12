@@ -1,0 +1,7 @@
+@import '../../scss/fontFamilies', '../../scss/colors', '../../scss/mixins';
+
+section{
+    @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerPrimary));
+    @include fonts($primaryFont, 100%, 400)
+  
+}

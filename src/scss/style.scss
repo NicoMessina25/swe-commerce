@@ -2,6 +2,7 @@
 
 img{
     transition: all .4s;
+    border-radius: 50px 50px 50px 50px;
     &:hover{
         transform: scale(1.05,1.05);
     }
@@ -42,7 +43,6 @@ img{
     @include fonts($primaryFont, 100%, 700);
     border-radius: 5px 25px 5px 25px;
     width: fit-content;
-    font-weight: bolder;
     @include marPad(1%, 1%);
     transition: all .1s;
     &:hover{
@@ -172,6 +172,8 @@ img{
     }
 }
 
-@media screen and (min-width: 768px) {
-    
+.mainTitle{
+    @include marPad(0,1%);
+    color: map-get($darkMainCol, darkerPrimary);
+    background-image: linear-gradient(90deg, map-get($mainCol, mBlue), map-get($transpMainCol, transPrimary));
 }
