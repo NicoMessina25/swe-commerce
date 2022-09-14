@@ -1,7 +1,18 @@
 @import '../../scss/fontFamilies', '../../scss/colors', '../../scss/mixins';
 
-section{
+.itemListCont{
     @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerPrimary));
-    @include fonts($primaryFont, 100%, 400)
+    @include marPad(0, 1%);
+    @include fonts($primaryFont, 50%, 400);
+    align-items: center;
   
+    h1{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .itemListCont{
+        @include fonts($primaryFont, 100%, 400);
+    }
 }

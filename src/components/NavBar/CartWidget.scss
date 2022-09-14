@@ -1,6 +1,7 @@
+@import '../../scss/fontFamilies', '../../scss/mixins';
 
 .cart{
-    font-size: 70%;
+    @include fonts($secondaryFont, 70%, 700);
     text-align: center;
 }
 

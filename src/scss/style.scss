@@ -173,7 +173,8 @@ img{
 }
 
 .mainTitle{
-    @include marPad(0,1%);
+    @include marPad(1%,1%);
+    border-radius: 75px 75px 75px 75px;
     color: map-get($darkMainCol, darkerPrimary);
     background-image: linear-gradient(90deg, map-get($mainCol, mBlue), map-get($transpMainCol, transPrimary));
 }
