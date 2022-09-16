@@ -1,7 +1,7 @@
 @import '../../scss/fontFamilies', '../../scss/colors', '../../scss/mixins';
 
 .itemListCont{
-    @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerPrimary));
+    @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($mainCol, primary));
     @include marPad(0, 1%);
     @include fonts($primaryFont, 50%, 400);
     align-items: center;

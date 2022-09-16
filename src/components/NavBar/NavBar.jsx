@@ -11,7 +11,7 @@ import {ImMug} from 'react-icons/im';
 function NavBar(){
     return (
         <nav className='flexible--row'>
-            <img src="img/swShopLogo.png" alt="" />
+            <img src="img/swShopLogo.png" alt="" className='logo' />
             <button className='button2--blue'><AiFillHome/> Inicio</button>
             <ul className="menu flexible--row">
                 <li className='button--blue'><GiHoodedFigure/> Figuras de Acción</li>

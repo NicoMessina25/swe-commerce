@@ -1,13 +1,14 @@
 @import '../../scss/mixins', '../../scss/colors';
 
 nav{
-    @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($mainCol, primary));
+    @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerPrimary));
     justify-content: space-around;
     align-items: center;
     font-size: 50%;
 
-    img{
+    .logo{
         @include sizes(30px, 30px);
+        border-radius: 50px 50px 50px 50px;
     }
 
     .menu{
@@ -24,7 +25,7 @@ nav{
     nav{
         font-size: 100%;
 
-        img{
+        .logo{
             @include sizes(140px, 140px);
         }
 

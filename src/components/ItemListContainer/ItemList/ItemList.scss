@@ -1,0 +1,6 @@
+@import '../../../scss/fontFamilies', '../../../scss/colors', '../../../scss/mixins';
+
+.itemList{
+    background-color: map-get($mainCol , primary);
+    justify-content: space-evenly;
+}
