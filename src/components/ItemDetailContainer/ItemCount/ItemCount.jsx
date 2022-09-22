@@ -24,7 +24,7 @@ function ItemCount({initial, stock}){
                 <p>{count}</p>
                 <Button classN='button2--green itemCountButton' onClick={clickHandlerAdd}><FaPlus/></Button>
             </div>
-            <Button classN='button2--purple'>Agregar al Carrito</Button>
+            <Button classN='button2--purple btnAdd'>Agregar al Carrito</Button>
         </div>
         
     );

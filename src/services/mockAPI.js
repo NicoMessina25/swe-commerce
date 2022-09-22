@@ -127,11 +127,11 @@ const DBProducts = [
     },
     {
         id: 15,
-        title: "The Mandalorian - Figura de Acción",
+        title: "Cafetera con Taza de Chewbacca incluida",
         price: 3500,
         stock: 19,
         category: "Cup",
-        detail: "Cafetera individual. Interruptor de encendido/apagado iluminado. Bandeja de goteo extraíble. Tapa abatible. Taza de 12 onzas y filtro permanente incluido",
+        detail: "Cafetera individual. Interruptor de encendido/apagado iluminado. Bandeja de goteo extraíble. Tapa abatible. Taza de 12 onzas y filtro permanente incluido.",
         img: "/img/Items/coffeMakerChewCup.jpg"
     },
     {
@@ -289,15 +289,6 @@ const DBProducts = [
     },
     {
         id: 33,
-        title: "The Mandalorian - Figura de Acción",
-        price: 700,
-        stock: 7,
-        category: "ActionFigure",
-        detail: "The Mandalorian: Su cuerpo está blindado por una armadura beskar, su cara está oculta detrás de una máscara con visera en T, y su pasado está lleno de misterio. Diseño inspirado en la serie de Disney Plus.",
-        img: "/img/Items/obiWanSeriesHoodie.jpg"
-    },
-    {
-        id: 34,
         title: "Trilogía Original - Vaso Térmico con Doble Pared",
         price: 3000,
         stock: 5,
@@ -306,7 +297,7 @@ const DBProducts = [
         img: "/img/Items/originalTrilogyThermalCup.jpg"
     },
     {
-        id: 35,
+        id: 34,
         title: "R2D2 - Kit de Construcción LEGO",
         price: 9000,
         stock: 12,
@@ -315,7 +306,7 @@ const DBProducts = [
         img: "/img/Items/r2d2ActionFigure.jpg"
     },
     {
-        id: 36,
+        id: 35,
         title: "R2D2 - Remera",
         price: 3600,
         stock: 5,
@@ -324,7 +315,7 @@ const DBProducts = [
         img: "/img/Items/r2s2Shirt.jpg"
     },
     {
-        id: 37,
+        id: 36,
         title: "The Millenium Falcon - Remera",
         price: 2600,
         stock: 7,
@@ -333,7 +324,7 @@ const DBProducts = [
         img: "/img/Items/milleniumFalconShirt.jpg"
     },
     {
-        id: 38,
+        id: 37,
         title: "Original Trilogy - Remera",
         price: 3600,
         stock: 25,
@@ -342,7 +333,7 @@ const DBProducts = [
         img: "/img/Items/originalTrilogyShirt.jpg"
     },
     {
-        id: 39,
+        id: 38,
         title: "Star Wars - Vaso Térmico (Triple Pared)",
         price: 5000,
         stock: 16,
@@ -351,7 +342,7 @@ const DBProducts = [
         img: "/img/Items/starWarsThermalCup.jpg"
     },
     {
-        id: 40,
+        id: 39,
         title: "Star Wars - Gorra con Visera",
         price: 1900,
         stock: 20,
@@ -360,7 +351,7 @@ const DBProducts = [
         img: "/img/Items/starWarsCap.jpg"
     },
     {
-        id: 41,
+        id: 40,
         title: "Darth Vader vs Obi-Wan Kenobi - Remera",
         price: 3200,
         stock: 5,
@@ -369,7 +360,7 @@ const DBProducts = [
         img: "/img/Items/vaderVSObiWanShirt.jpg"
     },
     {
-        id: 42,
+        id: 41,
         title: "Star Wars - Taza de Cerámica",
         price: 2500,
         stock: 14,
@@ -378,16 +369,16 @@ const DBProducts = [
         img: "/img/Items/starWarsCup.jpg"
     },
     {
-        id: 43,
+        id: 42,
         title: "Stormtrooper - Taza de Cerámica",
-        price: 700,
+        price: 2300,
         stock: 7,
         category: "Cup",
         detail: "Taza de café esculpida 3D: nuestra taza de café esculpida 3D tiene capacidad para 20 onzas de tu café favorito con leche, capuchino o goteo cuando necesites aprovechar la fuerza por la mañana. Múltiples usos: es una taza coleccionable con licencia oficial que también se puede utilizar como pisapapeles, soporte para bolígrafos para tu escritorio o un lugar para almacenar tu cambio suelto.",
         img: "/img/Items/stormTrooperCup.jpg"
     },
     {
-        id: 44,
+        id: 43,
         title: "El Mandalorian y el Stormtrooper - Figuras de Acción",
         price: 3400,
         stock: 21,
@@ -396,7 +387,7 @@ const DBProducts = [
         img: "/img/Items/stormTrooperMandoFigure.jpg"
     },
     {
-        id: 45,
+        id: 44,
         title: "Casco de Boba Fett - Artículo Coleccionable",
         price: 19000,
         stock: 5,
@@ -405,7 +396,7 @@ const DBProducts = [
         img: "/img/Items/bobaFettHelmet.jpg"
     },
     {
-        id: 46,
+        id: 45,
         title: "Casco de Darth Vader - Artículo Coleccionable",
         price: 19500,
         stock: 5,
@@ -414,7 +405,7 @@ const DBProducts = [
         img: "/img/Items/darthVaderHelmet.jpg"
     },
     {
-        id: 47,
+        id: 46,
         title: "Darth Vader - Taza de Cerámica",
         price: 2000,
         stock: 5,
@@ -423,7 +414,7 @@ const DBProducts = [
         img: "/img/Items/darthVaderCup.jpg"
     },
     {
-        id: 48,
+        id: 47,
         title: "Chewbacca - Taza de Cerámica",
         price: 2000,
         stock: 5,
@@ -432,7 +423,7 @@ const DBProducts = [
         img: "/img/Items/chewCup.jpg"
     },
     {
-        id: 49,
+        id: 48,
         title: "Darth Vader - Remera",
         price: 3600,
         stock: 12,
@@ -441,7 +432,7 @@ const DBProducts = [
         img: "/img/Items/darthVaderEpicBlackShirt.jpg"
     },
     {
-        id: 50,
+        id: 49,
         title: "Imperio - Remera",
         price: 5000,
         stock: 16,
@@ -450,7 +441,7 @@ const DBProducts = [
         img: "/img/Items/empireShirt.jpg"
     },
     {
-        id: 51,
+        id: 50,
         title: "Rebeldes - Remera",
         price: 2600,
         stock: 10,
@@ -467,4 +458,18 @@ export default function getProducts(){
             resolve(DBProducts);
         }, 2000);
     });
+}
+
+export function getEspecifiedProduct(itemId){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            const item = DBProducts.find(i => i.id === itemId);
+
+            if(item){
+                resolve(item);
+            } else {
+                reject(new Error("Producto no encontrado"));
+            }
+        }, 2000);
+    })
 }

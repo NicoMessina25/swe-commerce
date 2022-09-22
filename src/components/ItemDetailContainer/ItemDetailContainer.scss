@@ -1,0 +1,7 @@
+@import '../../scss/fontFamilies', '../../scss/colors', '../../scss/mixins';
+
+.itemDetailContainer{
+    @include marPad(0%, 1%);
+    @include colAndBGCol(map-get($mainCol, mBlue), map-get($darkMainCol, darkerPrimary));
+    //@include sizes(98%, 35vw);
+}

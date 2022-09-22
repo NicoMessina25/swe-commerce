@@ -1,6 +1,7 @@
 
 import NavBar from './components/NavBar/NavBar.jsx';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx';
 import './App.css';
 
 
@@ -11,7 +12,8 @@ function App() {
         <NavBar/>
       </header>
       <main>
-        <ItemListContainer greeting="Bienvenido a Star Wars Shop!"/>
+        {/* <ItemListContainer greeting="Bienvenido a Star Wars Shop!"/> */}
+        <ItemDetailContainer/>
       </main>
       
     </div>

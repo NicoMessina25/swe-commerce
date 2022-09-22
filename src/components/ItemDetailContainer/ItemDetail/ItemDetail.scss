@@ -1,0 +1,42 @@
+@import '../../../scss/fontFamilies', '../../../scss/colors', '../../../scss/mixins', '../../ItemListContainer/Item/Item.scss';
+
+.itemDetail{
+    @extend.itemCard;
+    @include sizes(90%, auto);
+    justify-content: space-around;
+
+    .imgContainer{
+        width: 50%;
+        
+        justify-content: center;
+        img{
+            @include sizes(auto, 100%);
+            max-height: 500px;
+        }
+    }
+
+    .info{
+        @include marPad(0, 2%);
+        align-items: center;
+        justify-content: space-around;
+        @include sizes(70%,100%);
+
+    }
+
+    .title{
+        margin:0;
+        border-bottom: 2px solid map-get($mainCol, mBlue);
+    }
+
+    .detail{
+        width: 80%;
+        color: map-get($lightMainCol, lighterBlue);
+        text-align: justify;
+    }
+
+
+    button{
+        width: auto;
+    }
+
+}

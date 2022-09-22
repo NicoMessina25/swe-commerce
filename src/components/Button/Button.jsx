@@ -1,6 +1,6 @@
 import React from "react";
 import '../../scss/style.scss';
-import '../ItemListContainer/itemCount/ItemCount.scss';
+import '../ItemDetailContainer/ItemCount/ItemCount.scss';
 
 function Button({classN, onClick, children}) {
     return (
