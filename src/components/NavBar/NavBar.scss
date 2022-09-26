@@ -17,6 +17,10 @@ nav{
         justify-content: space-evenly;
         list-style: none;
         
+        .categoryLink{
+            text-decoration: none;
+            color: inherit;
+        }
     }
     
 }

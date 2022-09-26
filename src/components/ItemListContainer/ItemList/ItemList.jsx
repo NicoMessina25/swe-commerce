@@ -6,12 +6,12 @@ import '../../../scss/style.scss';
 function ItemList({data}){
     return (
         <div className="itemList flexible--rowWrap">
-            {data.map(({id, title, price, detail, img})=>{
+            {data.map(({id, title, price, img})=>{
                 return <Item 
                     key = {id}
+                    id = {id}
                     title = {title}
                     price = {price}
-                    detail = {detail}
                     img = {img}
                 />
             })}          
