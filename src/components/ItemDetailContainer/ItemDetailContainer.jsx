@@ -21,6 +21,7 @@ function ItemDetailContainer(){
     return (
         <section className="itemDetailContainer">
             <ItemDetail 
+                id = {item.id}
                 title={item.title}
                 img={item.img}
                 price={item.price}

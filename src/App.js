@@ -5,38 +5,42 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import './App.scss';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Cart from './components/Cart/Cart.jsx';
+import CartContextProvider from './components/Context/cartContext.jsx';
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <div >
-        <header>
-          <NavBar/>
-        </header>
-        <main>
-          <Routes>
-            <Route path="/" element={
-              <ItemListContainer greeting="Bienvenido a Star Wars Shop!"/>
-            }/>
-            <Route path="/categoria/:cat" element={
+    <CartContextProvider>
+      <BrowserRouter>
+        <div >
+          <header>
+            <NavBar/>
+          </header>
+          <main>
+            <Routes>
+              <Route path="/" element={
+                <ItemListContainer greeting="Bienvenido a Star Wars Shop!"/>
+              }/>
+              <Route path="/categoria/:cat" element={
+              
+                <ItemListContainer/>}
+              
+              />
+              <Route path="/productos/:id" element={
+                <ItemDetailContainer/>
+              }/>  
+              <Route path='/cart' element={
+                <Cart/>
+              }/>         
+              <Route path='*' element={<h1>Error 404</h1>}/>
+            </Routes>
             
-              <ItemListContainer/>}
-            
-            />
-            <Route path="/productos/:id" element={
-              <ItemDetailContainer/>
-            }/>  
-            <Route path='/cart' element={
-              <Cart/>
-            }/>         
-            <Route path='*' element={<h1>Error 404</h1>}/>
-          </Routes>
+          </main>
           
-        </main>
-        
-      </div>
-    </BrowserRouter>
+        </div>
+      </BrowserRouter>
+    </CartContextProvider>
+    
     
   );
 }

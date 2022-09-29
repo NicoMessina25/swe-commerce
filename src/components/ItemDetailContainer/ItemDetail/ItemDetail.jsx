@@ -3,14 +3,18 @@ import ItemCount from "../ItemCount/ItemCount";
 import './ItemDetail.scss';
 import '../../../scss/style.scss'
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { cartCntx } from "../../Context/cartContext.jsx";
 
 function ItemDetail(props){
     const {title, price, img, detail, stock} = props;
 
     const [itemCountState, setItemCountState] = useState(true);
-
+    const {addItem} = useContext(cartCntx); 
+    
     function onAddToCart(count){
         setItemCountState(false);
+        addItem({...props}, count);
     }
 
     return (
