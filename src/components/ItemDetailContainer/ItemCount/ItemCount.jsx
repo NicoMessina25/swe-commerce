@@ -5,7 +5,7 @@ import '../../../scss/style.scss';
 import {FaPlus, FaMinus} from 'react-icons/fa';
 
 
-function ItemCount({initial, stock}){
+function ItemCount({onAddToCart, initial, stock}){
     const [count, setCount] = useState(initial);
 
 
@@ -24,7 +24,7 @@ function ItemCount({initial, stock}){
                 <p>{count}</p>
                 <Button classN='button2--green itemCountButton' onClick={clickHandlerAdd}><FaPlus/></Button>
             </div>
-            <Button classN='button2--purple btnAdd'>Agregar al Carrito</Button>
+            <Button classN='button2--purple btnAdd' onClick={() => onAddToCart(count)}>Agregar al Carrito</Button>
         </div>
         
     );

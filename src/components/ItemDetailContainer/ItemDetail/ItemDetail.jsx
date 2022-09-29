@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import './ItemDetail.scss';
 import '../../../scss/style.scss'
+import { Link } from "react-router-dom";
 
 function ItemDetail(props){
     const {title, price, img, detail, stock} = props;
+
+    const [itemCountState, setItemCountState] = useState(true);
+
+    function onAddToCart(count){
+        setItemCountState(false);
+    }
 
     return (
         <div className="itemDetail flexible--row">
@@ -19,7 +26,8 @@ function ItemDetail(props){
                 <div className="price">
                     <p>$ {price}</p>
                 </div>
-                <ItemCount initial={1} stock={stock}/>
+                {itemCountState? <ItemCount onAddToCart={onAddToCart} initial={1} stock={stock}/>:<Link to='/cart' className={"button2--green"}>Terminar Compra</Link>}
+                
             </div>            
         </div>
     );
