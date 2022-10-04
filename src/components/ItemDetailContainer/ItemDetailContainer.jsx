@@ -6,6 +6,7 @@ import {useParams} from 'react-router-dom';
 
 function ItemDetailContainer(){
     const [item, setItem] = useState({});
+    const [error, setError] = useState("");
 
     const {id} = useParams();
 
@@ -14,8 +15,11 @@ function ItemDetailContainer(){
             setItem(response);
         }).catch(err => {
             console.log(err);
+            setError(err.message);
         })
     }, [id]);
+
+    
 
 
     return (

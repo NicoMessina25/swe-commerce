@@ -30,7 +30,7 @@ function ItemDetail(props){
                 <div className="price">
                     <p>$ {price}</p>
                 </div>
-                {itemCountState? <ItemCount onAddToCart={onAddToCart} initial={1} stock={stock}/>:<Link to='/cart' className={"button2--green"}>Terminar Compra</Link>}
+                {itemCountState? <ItemCount onAddToCart={onAddToCart} initial={1} stock={stock}/>:<Link to='/cart' className={"button2--green"}>Ver Carrito</Link>}
                 
             </div>            
         </div>
