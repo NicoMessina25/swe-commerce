@@ -1,10 +1,17 @@
 import {BsCart3} from 'react-icons/bs';
 import './CartWidget.scss';
 import '../../scss/style.scss';
+import { useContext } from 'react';
+import {cartCntx} from '../Context/cartContext';
+import { Link } from 'react-router-dom';
 
-function CartWidget({itemsNumber}){
+function CartWidget(){
+    const {getAmountItemsCart} = useContext(cartCntx);
+
+
+
     return (
-        <div className='button3--purple cart'><BsCart3/><span> {itemsNumber}</span></div>
+        <Link to="/cart" className='button--purple cart'><BsCart3/><span> {getAmountItemsCart() || ""} </span></Link>
     );
 }
 

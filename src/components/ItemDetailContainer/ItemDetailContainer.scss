@@ -2,6 +2,16 @@
 
 .itemDetailContainer{
     @include marPad(0%, 1%);
-    @include colAndBGCol(map-get($mainCol, mBlue), map-get($darkMainCol, darkerPrimary));
-    //@include sizes(98%, 35vw);
+    @include colAndBGCol(map-get($mainCol, mBlue), map-get($mainCol, primary));
+    align-items: center;
+    .error{
+        width:90%;
+        align-items: center;
+        .mainTitle{
+            box-shadow: 0px 0px 10px 5px map-get($mainCol, mPurple);
+        }
+        p{
+            @include fonts($secondaryFont, 125%, 700);
+        }
+    }
 }

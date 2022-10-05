@@ -1,0 +1,102 @@
+@import '../../ItemListContainer/Item/Item.scss', '../../../scss/fontFamilies', '../../../scss/colors', '../../../scss/mixins';
+
+.cartItem{
+    @extend.itemCard;
+    width: 60%;
+    color: map-get($lightMainCol, lighterBlue);
+    justify-content: space-between;
+    max-height: 40vh;
+    height: auto;
+    font-size: 60%;
+    transition: all .4s;
+
+    h2{
+        margin: 2% 0 0 0;
+    }
+
+    .img{
+        max-height: 40vh;
+        width: 30%;
+        justify-content: center;
+        img{
+            width: auto;
+            max-width: 100%;
+            max-height: inherit;
+        }
+    }
+
+    .price{
+        margin-bottom: 0;
+        box-shadow: 1px 1px 10px 2px map-get($darkMainCol, darkerPrimary);
+        z-index: 2;
+    }
+
+    .amount_price{
+        width: 75%;
+
+    }
+
+    .amount{
+        margin-top: 0;
+        width: 50%;
+        z-index: 1;
+        font-size: 120%;
+        text-align: center;
+        background-color: map-get($darkMainCol, darkerBlue);
+        border-radius: 0px 0px 0px 15px;
+        box-shadow: 1px 1px 10px 2px map-get($darkMainCol, darkerPrimary);
+        p{
+            @include marPad(6% 0, 2%)
+        }
+        
+    }
+
+    .unitPrice{
+        p{
+           margin: 15% 0;
+           font-weight: bolder 
+        }
+        text-align: center;
+        @include marPad(0, 2%);
+        @include colAndBGCol(map-get($mainCol, primary), map-get($darkMainCol, darkerGreen));
+        border-radius: 0px 0px 15px 0px;
+        
+    }
+
+    button{
+        width: 40%;
+        z-index: 4;
+        font-size: 120%;
+    }
+
+    .itemCartData{
+        width: 70%;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .cartItem{
+        max-height: 20vh;
+
+        .img{
+            max-height: 20vh;
+            width: 30%;
+        }
+
+        .amount{
+            width: 75%;
+            p{
+                margin: 0;
+            }
+        }
+        .unitPrice{
+            p{
+                margin: 0%;
+            }
+        }
+    }
+    
+}

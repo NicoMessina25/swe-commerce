@@ -5,8 +5,8 @@ import '../../../scss/style.scss';
 import {FaPlus, FaMinus} from 'react-icons/fa';
 
 
-function ItemCount({onAddToCart, initial, stock}){
-    const [count, setCount] = useState(initial);
+function ItemCount({onAddToCart, initial, added, stock}){
+    const [count, setCount] = useState(added);
 
 
     function clickHandlerAdd(){

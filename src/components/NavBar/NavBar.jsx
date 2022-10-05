@@ -20,7 +20,7 @@ function NavBar(){
                 <li className='button--blue'><ImMug/> <Link to="/categoria/Tazas" className='categoryLink'>Tazas</Link></li>
                 <li className='button--blue'><FaBoxes/> <Link to="/categoria/Otros" className='categoryLink'>Otros</Link></li>
             </ul>
-            <CartWidget itemsNumber={3}/>
+             <CartWidget/>
         </nav>
     );
 }

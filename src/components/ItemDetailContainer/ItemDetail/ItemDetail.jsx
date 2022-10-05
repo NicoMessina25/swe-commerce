@@ -7,10 +7,12 @@ import { useContext } from "react";
 import { cartCntx } from "../../Context/cartContext.jsx";
 
 function ItemDetail(props){
-    const {title, price, img, detail, stock} = props;
+    const {id, title, price, img, detail, stock} = props;
 
     const [itemCountState, setItemCountState] = useState(true);
-    const {addItem} = useContext(cartCntx); 
+    const {addItem, getItemInCart} = useContext(cartCntx); 
+
+    const itemInCart = getItemInCart(id);
     
     function onAddToCart(count){
         setItemCountState(false);
@@ -30,7 +32,13 @@ function ItemDetail(props){
                 <div className="price">
                     <p>$ {price}</p>
                 </div>
-                {itemCountState? <ItemCount onAddToCart={onAddToCart} initial={1} stock={stock}/>:<Link to='/cart' className={"button2--green"}>Ver Carrito</Link>}
+                {itemCountState? 
+                    <ItemCount onAddToCart={onAddToCart} initial={1} added={itemInCart? itemInCart.count:1} stock={stock}/>
+                    : <div className="linkContainer flexible--row">
+                        <Link to='/' className="button2--blue">Volver a la Tienda</Link>
+                        <Link to='/cart' className={"button2--green"}>Ver Carrito</Link>
+                    </div>
+                }
                 
             </div>            
         </div>

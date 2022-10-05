@@ -1,0 +1,59 @@
+@import '../../scss/fontFamilies', '../../scss/colors', '../../scss/mixins';
+
+.cartContainer{
+    align-items: center;
+    @include fonts($secondaryFont, 60%, 700);
+}
+
+.totalContainer{
+    background-color: map-get($darkMainCol, darkerPrimary);
+    @include marPad(1%, 2%);
+    border-radius: 10px 30px;
+    height: 20vh;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+
+    .totalPrice{
+        @include colAndBGCol(map-get($lightMainCol, lighterGreen), map-get($darkMainCol, darkerGreen));
+        border-radius: 10px 30px;
+        font-size: 120%;
+        padding: 1%;
+        height: 60%;
+        justify-content: center;
+    }
+
+    .buttonsContainer{
+        font-size: 80%;
+        width: 40%;
+        align-items: center;
+        justify-content: space-around;
+
+        .button--green, .button--red{
+            width: 100%;
+            text-align: center;
+        } 
+    }
+}
+
+
+
+.noProductsInCart{
+    @include colAndBGCol(map-get($lightMainCol, lighterRed), map-get($darkMainCol, darkerPrimary));
+    @include fonts($primaryFont, 100%, 700);
+    @include sizes(100%, 20vh);
+    padding: 4% 0%;
+    align-items: center;
+    justify-content: center;
+
+    .mainTitle{
+        box-shadow: 0px 0px 10px 5px map-get($mainCol, mRed);
+        font-size: 140%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cartContainer{
+        font-size: 100%;
+    }
+}
