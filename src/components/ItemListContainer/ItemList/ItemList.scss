@@ -3,4 +3,5 @@
 .itemList{
     background-color: map-get($mainCol , primary);
     justify-content: space-evenly;
+    width: 100%;
 }

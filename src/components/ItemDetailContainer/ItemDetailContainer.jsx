@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from "react";
 import './ItemDetailContainer.scss';
 import '../../scss/style.scss';
-import { getEspecifiedProduct } from "../../services/mockAPI";
+import { getEspecifiedProduct } from "../../services/firestore";
 import ItemDetail from "./ItemDetail/ItemDetail";
 import {useParams} from 'react-router-dom';
 import Loader from "../Loader/Loader";
@@ -16,7 +16,7 @@ function ItemDetailContainer(){
 
     useEffect(()=>{
         setIsLoading(true);
-        getEspecifiedProduct(parseInt(id)).then( response =>{
+        getEspecifiedProduct(id).then( response =>{
             setItem(response);
             setIsLoading(false);
         }).catch(err => {

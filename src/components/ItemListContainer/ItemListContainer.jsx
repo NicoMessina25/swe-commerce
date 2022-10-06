@@ -1,8 +1,7 @@
 import './ItemListContainer.scss';
 import '../../scss/style.scss';
 import ItemList from './ItemList/ItemList.jsx';
-import getProducts from '../../services/mockAPI';
-import { getProductsByCat } from '../../services/mockAPI';
+import getProducts, { getProductsByCat } from '../../services/firestore';
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 //import {Pinwheel} from '@uiball/loaders';
