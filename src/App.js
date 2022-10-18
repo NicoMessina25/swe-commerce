@@ -6,6 +6,7 @@ import './App.scss';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Cart from './components/Cart/Cart.jsx';
 import CartContextProvider from './components/Context/cartContext.jsx';
+import CheckoutForm from './components/CheckoutForm/CheckoutForm.jsx';
 
 function App() {
   return (
@@ -30,7 +31,10 @@ function App() {
               }/>  
               <Route path='/cart' element={
                 <Cart/>
-              }/>         
+              }/>  
+              <Route path='/checkout' element={
+                <CheckoutForm/>
+              }/>       
               <Route path='*' element={<h1>Error 404</h1>}/>
             </Routes>
             

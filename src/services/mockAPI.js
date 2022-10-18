@@ -1,6 +1,5 @@
 const DBProducts = [
     {
-        id: 1,
         title: "The Mandalorian - Figura de Acción",
         price: 4400,
         stock: 7,
@@ -9,7 +8,6 @@ const DBProducts = [
         img: "/img/Items/actionFigureMando.jpg"
     },
     {
-        id: 2,
         title: "BB8 - Taza de Cerámica",
         price: 2100,
         stock: 17,
@@ -18,7 +16,6 @@ const DBProducts = [
         img: "/img/Items/bb8Cup.jpg"
     },
     {
-        id: 3,
         title: "Alianza Rebelde - Figuras de Acción",
         price: 4500,
         stock: 10,
@@ -27,7 +24,6 @@ const DBProducts = [
         img: "/img/Items/rebelAllianceFigures.jpg"
     },
     {
-        id: 4,
         title: "La Resistencia - Figuras de Acción",
         price: 5100,
         stock: 3,
@@ -36,7 +32,6 @@ const DBProducts = [
         img: "/img/Items/theResistanceFigures.jpg"
     },
     {
-        id: 5,
         title: "Dark Trooper - Figura de Acción",
         price: 4000,
         stock: 9,
@@ -45,7 +40,6 @@ const DBProducts = [
         img: "/img/Items/darkTrooperFigure.jpg"
     },
     {
-        id: 6,
         title: "Dark Revan - Figura de Acción",
         price: 5600,
         stock: 4,
@@ -54,7 +48,7 @@ const DBProducts = [
         img: "/img/Items/darthRevanFigure.jpg"
     },
     {
-        id: 7,
+
         title: "C3PO - Figura de Acción Coleccionable",
         price: 3700,
         stock: 2,
@@ -63,7 +57,6 @@ const DBProducts = [
         img: "/img/Items/c3poFigure.jpg"
     },
     {
-        id: 8,
         title: "Clone Trooper (Legión 501) - Figura de Acción",
         price: 2300,
         stock: 12,
@@ -72,7 +65,6 @@ const DBProducts = [
         img: "/img/Items/cloneTrooperFigure.jpg"
     },
     {
-        id: 9,
         title: "Darth Sidious - Figura de Acción",
         price: 3300,
         stock: 11,
@@ -81,7 +73,6 @@ const DBProducts = [
         img: "/img/Items/darthSidiousFigure.jpg"
     },
     {
-        id: 10,
         title: "Darth Vader - Figura de Acción",
         price: 2200,
         stock: 15,
@@ -90,7 +81,6 @@ const DBProducts = [
         img: "/img/Items/darthVaderFigure.jpg"
     },
     {
-        id: 11,
         title: "General Grievous - Figura de Acción",
         price: 5500,
         stock: 7,
@@ -99,7 +89,6 @@ const DBProducts = [
         img: "/img/Items/generalGrievousFigure.jpg"
     },
     {
-        id: 12,
         title: "Obi-Wan Kenobi - Figura de Acción",
         price: 3600,
         stock: 23,
@@ -108,7 +97,6 @@ const DBProducts = [
         img: "/img/Items/obiWanKenobiFigure.jpg"
     },
     {
-        id: 13,
         title: "Tercera Hermana (Reva) - Figura de Acción",
         price: 3600,
         stock: 3,
@@ -117,16 +105,14 @@ const DBProducts = [
         img: "/img/Items/thirdSisterFigure.jpg"
     },
     {
-        id: 14,
         title: "Casco de Bo-Katan Kryze - Artículo Coleccionable",
         price: 18500,
         stock: 10,
-        category: "Otros"/*"Cascos"*/,
+        category: "Otros",
         detail: "BO-KATAN KRYZE: Bo-Katan Kryze lleva armadura que ha estado en su familia durante generaciones. La última de su línea, lidera un equipo de Clan Kryze Mandalorians golpeando hacia atrás en el remanente imperial. Casco electrónico de alta calidad: con decoración muy detallada, diseño inspirado en la serie, ajuste ajustable, acolchado interior y luces electrónicas, este casco Bo-Katan Kryze a escala completa es una adición icónica a la colección de cualquier fan de Star Wars.",
         img: "/img/Items/boKatanHelmetItem.jpg"
     },
     {
-        id: 15,
         title: "Cafetera con Taza de Chewbacca incluida",
         price: 3500,
         stock: 19,
@@ -135,16 +121,14 @@ const DBProducts = [
         img: "/img/Items/coffeMakerChewCup.jpg"
     },
     {
-        id: 16,
         title: "Sable Oscuro - Artículo Coleccionable",
         price: 4300,
         stock: 10,
-        category: "Otros"/* "Sables" */,
+        category: "Otros",
         detail: "SABER OSCURO MANDALORIANA: En la saga de Star Wars, este sable de luz de hoja negra único ha sido un símbolo del poder mandaloriano durante generaciones, y ha sido manejado por algunos de los mejores guerreros de Mandalore. Iluminador electrónico con sonido FX: con un emocionante sonido electrónico FX inspirado en la serie animada de Star Wars: The Clone Wars, niños y niñas de 5 años en adelante pueden imaginar batallar en duelos épicos de sable de luz con el juguete de juego de rol de sable de luz mandaloriano Darksaber Lightsable.",
         img: "/img/Items/darkSaber.jpg"
     },
     {
-        id: 17,
         title: "Darth Vader - Remera",
         price: 3600,
         stock: 12,
@@ -153,7 +137,6 @@ const DBProducts = [
         img: "/img/Items/darthVaderBlackShirt.jpg"
     },
     {
-        id: 18,
         title: "Darth Vader - Remera",
         price: 3600,
         stock: 13,
@@ -162,7 +145,6 @@ const DBProducts = [
         img: "/img/Items/darthVaderRedShirt.jpg"
     },
     {
-        id: 19,
         title: "Darth Vader - Vaso Térmico (acero inoxidable)",
         price: 4900,
         stock: 7,
@@ -171,7 +153,6 @@ const DBProducts = [
         img: "/img/Items/darthVaderThermalCup.jpg"
     },
     {
-        id: 20,
         title: "Imperio - Gorra con Visera",
         price: 1900,
         stock: 5,
@@ -180,7 +161,6 @@ const DBProducts = [
         img: "/img/Items/empireCap.jpg"
     },
     {
-        id: 21,
         title: "Funko Pop! El Mandalorian y Grogu - Figura de Acción",
         price: 1900,
         stock: 15,
@@ -189,16 +169,14 @@ const DBProducts = [
         img: "/img/Items/funkoPopMandoGrogu.jpg"
     },
     {
-        id: 22,
         title: "Grogu - Bolso",
         price: 5300,
         stock: 3,
-        category: "Otros"/* "Mochilas" */,
+        category: "Otros",
         detail: "El niño sobre la marcha: la lonchera OTG Star Wars the Child Drama de Oniva, una marca Picnic Time es perfecta para excursiones intergalácticas de picnic y almuerzos en la escuela o la oficina. Fácil acceso: un bolsillo frontal con cremallera para accesorios almacena tu teléfono, cartera y llaves con un área separada para artículos estables en el estante",
         img: "/img/Items/groguBag.jpg"
     },
     {
-        id: 23,
         title: "Grogu - Taza de Cerámica (con cuchara)",
         price: 2500,
         stock: 13,
@@ -207,7 +185,6 @@ const DBProducts = [
         img: "/img/Items/groguCup.jpg"
     },
     {
-        id: 24,
         title: "Grogu - Vaso Térmico",
         price: 2900,
         stock: 5,
@@ -216,7 +193,6 @@ const DBProducts = [
         img: "/img/Items/groguThermalCup.jpg"
     },
     {
-        id: 25,
         title: "\"I Am Your Father\" - Remera",
         price: 3600,
         stock: 12,
@@ -225,34 +201,30 @@ const DBProducts = [
         img: "/img/Items/iAmYourFatherShirt.jpg"
     },
     {
-        id: 26,
         title: "Darth Vader (Casco) - Kit de Construcción LEGO",
         price: 12000,
         stock: 4,
-        category: "Otros"/* "LEGO" */,
+        category: "Otros",
         detail: "Escapa del estrés de la vida cotidiana por un tiempo y disfruta de un tiempo de calidad recreando cada detalle amenazante del casco de Darth Vader con este kit de construcción coleccionable LEGO Star Wars.",
         img: "/img/Items/legoDarthVaderHelmet.jpg"
     },
     {
-        id: 27,
         title: "Luke Skywalker (Casco del Red Five) - Kit de Construcción LEGO",
         price: 12000,
         stock: 7,
-        category: "Otros"/* "LEGO" */,
+        category: "Otros",
         detail: "Despierta tu fuerza creativa: canaliza el enfoque y la atención plena similares a Jedi mientras construyes este casco LEGO Star Wars Luke Skywalker (Red Five) (75327) altamente detallado. Hecho para exhibir: despierta recuerdos de escenas de la saga de Star Wars mientras replicas detalles auténticos del casco de Luke Skywalker en ladrillos LEGO y exhibirlo en el soporte integrado con placa de identificación.",
         img: "/img/Items/legoLukeRedFiveHelmet.jpg"
     },
     {
-        id: 28,
         title: "Sable de Leia Organa - Artículo Coleccionable",
         price: 28700,
         stock: 1,
-        category: "Otros"/* "Sables" */,
+        category: "Otros",
         detail: "Luces avanzadas con efectos de sonido: el sable de luz Leia Organa Force FX Elite combina LED avanzados y efectos de sonido inspirados en el entretenimiento. Detalles premium para autenticidad: el sable de luz Leia Organa Force FX Elite cuenta con diseño y decoración basados en el icónico sable de luz azul de Leia Organa que aparece en Star Wars: The Rise of Skywalker",
         img: "/img/Items/leiaLightsaber.jpg"
     },
     {
-        id: 29,
         title: "The Mandalorian (Casco) - Artículo Coleccionable",
         price: 19000,
         stock: 7,
@@ -261,7 +233,6 @@ const DBProducts = [
         img: "/img/Items/mandoHelmet.jpg"
     },
     {
-        id: 30,
         title: "Mandalorian - Vaso Térmico",
         price: 4900,
         stock: 17,
@@ -270,7 +241,6 @@ const DBProducts = [
         img: "/img/Items/mandoThermalCup1.jpg"
     },
     {
-        id: 31,
         title: "Mandalorian - Vaso Térmico (Triple Pared)",
         price: 4900,
         stock: 11,
@@ -279,16 +249,14 @@ const DBProducts = [
         img: "/img/Items/mandoThermalCup2.jpg"
     },
     {
-        id: 32,
         title: "Sable de Obi-Wan Kenobi - Artículo Colleccionable",
         price: 38100,
         stock: 2,
-        category: "Otros"/* "Sables" */,
+        category: "Otros",
         detail: "Luces avanzadas con efectos de sonido: Combinando LED avanzados y efectos de sonido inspirados en el entretenimiento, el sable de luz Obi-Wan Kenobi Force FX Elite es el sable de luz Force FX más realista hasta el momento",
         img: "/img/Items/obiWanLightsaber.jpg"
     },
     {
-        id: 33,
         title: "Trilogía Original - Vaso Térmico con Doble Pared",
         price: 3000,
         stock: 5,
@@ -297,16 +265,14 @@ const DBProducts = [
         img: "/img/Items/originalTrilogyThermalCup.jpg"
     },
     {
-        id: 34,
         title: "R2D2 - Kit de Construcción LEGO",
         price: 9000,
         stock: 12,
-        category: "Otros"/*"LEGO" ["FigurasAccion","LEGO"]*/,
+        category: "Otros",
         detail: "The Mandalorian: Su cuerpo está blindado por una armadura beskar, su cara está oculta detrás de una máscara con visera en T, y su pasado está lleno de misterio. Diseño inspirado en la serie de Disney Plus.",
         img: "/img/Items/r2d2ActionFigure.jpg"
     },
     {
-        id: 35,
         title: "R2D2 - Remera",
         price: 3600,
         stock: 5,
@@ -315,7 +281,6 @@ const DBProducts = [
         img: "/img/Items/r2s2Shirt.jpg"
     },
     {
-        id: 36,
         title: "The Millenium Falcon - Remera",
         price: 2600,
         stock: 7,
@@ -324,7 +289,6 @@ const DBProducts = [
         img: "/img/Items/milleniumFalconShirt.jpg"
     },
     {
-        id: 37,
         title: "Original Trilogy - Remera",
         price: 3600,
         stock: 25,
@@ -333,7 +297,6 @@ const DBProducts = [
         img: "/img/Items/originalTrilogyShirt.jpg"
     },
     {
-        id: 38,
         title: "Star Wars - Vaso Térmico (Triple Pared)",
         price: 5000,
         stock: 16,
@@ -342,7 +305,6 @@ const DBProducts = [
         img: "/img/Items/starWarsThermalCup.jpg"
     },
     {
-        id: 39,
         title: "Star Wars - Gorra con Visera",
         price: 1900,
         stock: 20,
@@ -351,7 +313,6 @@ const DBProducts = [
         img: "/img/Items/starWarsCap.jpg"
     },
     {
-        id: 40,
         title: "Darth Vader vs Obi-Wan Kenobi - Remera",
         price: 3200,
         stock: 5,
@@ -360,7 +321,6 @@ const DBProducts = [
         img: "/img/Items/vaderVSObiWanShirt.jpg"
     },
     {
-        id: 41,
         title: "Star Wars - Taza de Cerámica",
         price: 2500,
         stock: 14,
@@ -369,7 +329,6 @@ const DBProducts = [
         img: "/img/Items/starWarsCup.jpg"
     },
     {
-        id: 42,
         title: "Stormtrooper - Taza de Cerámica",
         price: 2300,
         stock: 7,
@@ -378,7 +337,6 @@ const DBProducts = [
         img: "/img/Items/stormTrooperCup.jpg"
     },
     {
-        id: 43,
         title: "El Mandalorian y el Stormtrooper - Figuras de Acción",
         price: 3400,
         stock: 21,
@@ -387,25 +345,22 @@ const DBProducts = [
         img: "/img/Items/stormTrooperMandoFigure.jpg"
     },
     {
-        id: 44,
         title: "Casco de Boba Fett - Artículo Coleccionable",
         price: 19000,
         stock: 5,
-        category: "Otros"/* "Cascos" */,
+        category: "Otros",
         detail: "BOBA FETT (RE-ARMORED): Boba Fett aparentemente conoció su desaparición en el pozo Sarlacc en Tatooine. Fett ha sobrevivido a la bestia y ahora ha recuperado su distintiva armadura mandaloriana. Casco electrónico de alta calidad: con decoración muy detallada, diseño inspirado en la serie, acolchado interior, ajuste ajustable y luces electrónicas, este casco Boba Fett (re-Armored) es una adición icónica a la colección de cualquier fan de Star Wars.",
         img: "/img/Items/bobaFettHelmet.jpg"
     },
     {
-        id: 45,
         title: "Casco de Darth Vader - Artículo Coleccionable",
         price: 19500,
         stock: 5,
-        category: "Otros"/* "Cascos" */,
+        category: "Otros",
         detail: "DARTH VADER: Obi-Wan Kenobi se establece años después de los dramáticos eventos de Star Wars: La venganza del Sith, donde Kenobi se enfrentó a la corrupción de su amigo y aprendiz Jedi, Anakin Skywalker convirtió a Sith Lord Darth Vader. Casco electrónico de alta calidad: con decoración muy detallada, diseño inspirado en la serie, múltiples piezas y sonidos icónicos de ventilación. Este casco Darth Vader a escala completa también viene con un soporte para las máximas posibilidades de visualización.",
         img: "/img/Items/darthVaderHelmet.jpg"
     },
     {
-        id: 46,
         title: "Darth Vader - Taza de Cerámica",
         price: 2000,
         stock: 5,
@@ -414,7 +369,6 @@ const DBProducts = [
         img: "/img/Items/darthVaderCup.jpg"
     },
     {
-        id: 47,
         title: "Chewbacca - Taza de Cerámica",
         price: 2000,
         stock: 5,
@@ -423,7 +377,6 @@ const DBProducts = [
         img: "/img/Items/chewCup.jpg"
     },
     {
-        id: 48,
         title: "Darth Vader - Remera",
         price: 3600,
         stock: 12,
@@ -432,7 +385,6 @@ const DBProducts = [
         img: "/img/Items/darthVaderEpicBlackShirt.jpg"
     },
     {
-        id: 49,
         title: "Imperio - Remera",
         price: 5000,
         stock: 16,
@@ -441,7 +393,6 @@ const DBProducts = [
         img: "/img/Items/empireShirt.jpg"
     },
     {
-        id: 50,
         title: "Rebeldes - Remera",
         price: 2600,
         stock: 10,

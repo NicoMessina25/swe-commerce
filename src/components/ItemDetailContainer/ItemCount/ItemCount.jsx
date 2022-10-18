@@ -20,9 +20,9 @@ function ItemCount({onAddToCart, initial, added, stock}){
     return (
         <div className='itemCountContainer flexible--column'>
             <div className='flexible--row itemCount'>
-                <Button classN='button2--red itemCountButton' onClick={clickHandlerSubst}><FaMinus/></Button>
+                <Button classN='itemCountButton buttonTransp--red ' onClick={clickHandlerSubst}><FaMinus/></Button>
                 <p>{count}</p>
-                <Button classN='button2--green itemCountButton' onClick={clickHandlerAdd}><FaPlus/></Button>
+                <Button classN='itemCountButton buttonTransp--green ' onClick={clickHandlerAdd}><FaPlus/></Button>
             </div>
             <Button classN='button2--purple btnAdd' onClick={() => onAddToCart(count)}>Agregar al Carrito</Button>
         </div>

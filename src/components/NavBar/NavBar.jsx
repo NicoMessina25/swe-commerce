@@ -7,8 +7,6 @@ import {FaTshirt,FaBoxes} from 'react-icons/fa';
 import {ImMug} from 'react-icons/im';
 import {Link} from 'react-router-dom';
 
-//import logo from '../../../public/logo192.png'
-
 function NavBar(){
     return (
         <nav className='flexible--row'>

@@ -20,7 +20,6 @@ function ItemDetailContainer(){
             setItem(response);
             setIsLoading(false);
         }).catch(err => {
-            console.log(err);
             setError(err.message);
             setIsLoading(false);
         })

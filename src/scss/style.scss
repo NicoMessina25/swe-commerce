@@ -52,7 +52,6 @@ img{
     transition: all .1s;
     &:hover{
         transform: scale(1.1, 1.1);
-        //box-shadow: 1px 1px 10px 5px map-get($darkMainCol, darkerPrimary);
     }
 }
 
@@ -94,9 +93,7 @@ img{
 
 .button2{
     @extend.button;
-    //@include fonts($primaryFont, 100%, 700);
     border-radius: 75px 75px 75px 75px;
-    //border: 2px solid map-get($darkMainCol, darkerPrimary);
     transition: all .2s;
 }
 
@@ -132,53 +129,21 @@ img{
     }
 }
 
-/* .button3{
-    @extend.button;
-    //@include fonts($primaryFont, 100%, inherit);
-    @include marPad(1%, 1.5%);
-    border: 3px solid map-get($darkMainCol, darkerPrimary);
-    transition: all .2s;
-    border-radius: 25px 25px 25px 25px ;
-    &:hover{
-        transform: scale(1.0, 1.0)
-    }
+.buttonTransp--red{
+    @extend.button2--red;
+    @include marPad(0, 5%);
+    border: 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgba($color: #000000, $alpha: 0);
 }
 
-.button3--blue{
-    @extend.button3;
-    @include colAndBGCol(map-get($mainCol, primary), map-get($lightMainCol, lighterBlue));
-    &:hover{
-        //border: 3px solid map-get($darkMainCol, darkerBlue);
-        @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerPrimary));
-    }
+.buttonTransp--green{
+    @extend.button2--green;
+    @include marPad(0, 5%);
+    border: 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgba($color: #000000, $alpha: 0);
 }
-
-.button3--red{
-    @extend.button3;
-    @include colAndBGCol(map-get($mainCol, primary), map-get($lightMainCol, lighterRed));
-    &:hover{
-        //border: 3px solid map-get($darkMainCol, darkerRed);
-        @include colAndBGCol(map-get($lightMainCol, lighterRed), map-get($darkMainCol, darkerPrimary));
-    }
-}
-
-.button3--green{
-    @extend.button3;
-    @include colAndBGCol(map-get($mainCol, primary), map-get($lightMainCol, lighterGreen));
-    &:hover{
-        //border: 3px solid map-get($darkMainCol, darkerGreen);
-        @include colAndBGCol(map-get($lightMainCol, lighterGreen), map-get($darkMainCol, darkerPrimary));
-    }
-}
-
-.button3--purple{
-    @extend.button3;
-    @include colAndBGCol(map-get($mainCol, primary), map-get($lightMainCol, lighterPurple));
-    &:hover{
-        //border: 3px solid map-get($darkMainCol, darkerGreen);
-        @include colAndBGCol(map-get($lightMainCol, lighterPurple), map-get($darkMainCol, darkerPrimary));
-    }
-} */
 
 .mainTitle{
     @include marPad(1%,1%);
@@ -189,7 +154,8 @@ img{
     color: map-get($darkMainCol, darkerPrimary);
     text-align: center;
     animation: lightUp 2s;
-    /* background-image: linear-gradient(90deg, map-get($mainCol, mBlue), map-get($transpMainCol, transPrimary)); */
+    z-index: 1;
+
 }
 
 @keyframes lightUp {

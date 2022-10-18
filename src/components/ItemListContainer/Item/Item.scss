@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: space-around;
     width: 30%;
-    //min-width: 30%;
     border-radius: 12px 25px 12px 25px;
     @include fonts($secondaryFont, 50%, 400);
     @include marPad(1%, 2%);

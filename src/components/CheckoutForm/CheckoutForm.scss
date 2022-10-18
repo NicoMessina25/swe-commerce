@@ -1,0 +1,30 @@
+@import '../../scss/fontFamilies', '../../scss/colors', '../../scss/mixins', '../../scss/style.scss';
+
+.formContainer{
+    align-items: center;
+    @include fonts($primaryFont, 60%, 700);
+
+    .form{
+        width: 60%;
+        align-items: center;
+        border-radius: 5px 25px;
+        
+        @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerPrimary));
+    }
+
+    .dataOrder{
+        @include colAndBGCol(map-get($lightMainCol, lighterBlue), map-get($darkMainCol, darkerPrimary));
+        @include marPad(0%, 2%);
+        border-radius: 25px;
+        font-size: larger;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .formContainer{
+        @include fonts($primaryFont, 100%, 700);
+    }
+
+}

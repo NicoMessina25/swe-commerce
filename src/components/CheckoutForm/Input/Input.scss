@@ -1,0 +1,19 @@
+@import '../../../scss/fontFamilies', '../../../scss/colors', '../../../scss/mixins', '../../../scss/style';
+
+.inputContainer{
+    align-items: center;
+
+    .input{
+        @extend.button--blue;
+
+        border-radius: 5px 15px 5px 15px;
+
+        &:focus{
+            @include colAndBGCol(map-get($mainCol, primary), white);
+            box-shadow: 0px 0px 10px 5px map-get($mainCol, mBlue);
+            border: none;
+        }
+
+    }
+}
+

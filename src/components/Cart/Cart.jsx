@@ -34,7 +34,7 @@ function Cart(){
             <article className='totalContainer flexible--row'>
                 <div className='totalPrice flexible--column'><span>Total: ${getTotalCartPrice()}</span></div>
                 <div className='buttonsContainer flexible--column'>
-                    <Link className='button--green'>Finalizar Compra</Link>
+                    <Link to="/checkout" className='button--green'>Finalizar Compra</Link>
                     <Button classN={"button--red"} onClick={()=>clear()}>Vaciar Carrito</Button>
                 </div>
                 

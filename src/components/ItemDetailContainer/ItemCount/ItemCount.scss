@@ -20,14 +20,6 @@
     }
 }
 
-.itemCountButton{
-    @include marPad(0, 5%);
-    //width: 5px;
-    border: 0px;
-    border-radius: 0px 0px 0px 0px;
-    background-color: rgba($color: #000000, $alpha: 0);
-}
-
 .btnAdd{
     @include marPad(0, 2%);
 }
