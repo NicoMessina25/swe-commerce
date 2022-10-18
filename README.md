@@ -34,7 +34,7 @@ Este trabajo forma parte del curso de React de [CoderHouse](https://www.coderhou
 
 ## Deploy de la página
 
-[https://master--merry-basbousa-330057.netlify.app](https://master--merry-basbousa-330057.netlify.app)
+[https://master--starwarsshop.netlify.app](https://master--starwarsshop.netlify.app)
 
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
