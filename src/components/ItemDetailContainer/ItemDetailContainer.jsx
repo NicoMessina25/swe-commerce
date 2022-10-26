@@ -5,7 +5,7 @@ import { getEspecifiedProduct } from "../../services/firestore";
 import ItemDetail from "./ItemDetail/ItemDetail";
 import {useParams} from 'react-router-dom';
 import Loader from "../Loader/Loader";
-//import {Pinwheel} from '@uiball/loaders';
+
 
 function ItemDetailContainer(){
     const [item, setItem] = useState({});

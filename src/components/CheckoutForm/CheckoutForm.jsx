@@ -58,12 +58,7 @@ function CheckoutForm(){
         return dataForm.mail.trim() !== "" && dataForm.mail.includes("@") && dataForm.mail.includes(".") && dataForm.name.trim() !== "" && dataForm.phone !== "";
     }
 
-    function onKeyDownHandler(evt){
-        console.log(evt);
-        /*if(evt.target.value.length < 8){
-            (evt.keyCode >= 48 && evt.keyCode <= 57 && !evt.shiftKey) || evt.key === "-" || evt.keyCode === 8 || evt.preventDefault();
-        } else evt.keyCode === 8 || evt.preventDefault();*/
-        
+    function onKeyDownHandler(evt){        
         (evt.target.value.length < 8 && ((evt.keyCode >= 48 && evt.keyCode <= 57 && !evt.shiftKey) || evt.key === "-" || evt.keyCode === 8 || evt.preventDefault())) || evt.keyCode === 8 || evt.preventDefault();
     }
 
